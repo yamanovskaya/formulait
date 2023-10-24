@@ -70,7 +70,7 @@ for filename in os.listdir(image_dir):
         img_normalized = img_normalized[w // 2: w // 2 + 20, h // 2:h // 2 + 20] # вырезали кусочек изображения из центра (20*20 пикселей)
         img_normalized_big = cv.resize(img_normalized, (200, 200)) # увеличили размер изображения (было 20*20 стало 200*200)
         #сохранение изображения в папку
-        cv.imwrite(f'part_of_imgs\\{h // 2}_{h // 2 + 20}_{w // 2}_{w // 2 + 20}_{filename}', img_normalized) 
+        cv.imwrite(f'part_of_imgs\\{h // 2}_{h // 2 + 20}_{w // 2}_{w // 2 + 20}_{filename}.png', img_normalized) 
 #         cv.imshow('result', img_normalized_big) # вывод этого кусочка на экран
 #         cv.waitKey(0) # метод с аргументом 0, показывающий, что изображение будет открыто всегда, пока пользователь его не закроет
         print(f"picture: {filename}")
@@ -79,13 +79,4 @@ for filename in os.listdir(image_dir):
         print(f"Number of clasters: {cluster_count}", end = '\n\n')
 print(f"Number of pieces all images: {piece_whole_count}")
 print(f"Number of clasters all images: {cluster_whole_count}")
-
-'''
-TODO пример отправки запроса:
-app_url = "http://192.168.101.251:5000/test"
-post_data = {"steps": str(Y._current_pos), "time": str(int(end))}
-requests.post(f"{app_url}?steps={post_data['steps']}&time={post_data['time']}")
-
-TODO отправить изображение если конвертация будет
-'''
 
