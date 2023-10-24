@@ -1,4 +1,5 @@
 <!doctype html>
+{%load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SPS CV2</title>
     <link rel="icon" href ="img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0-_1_.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <script src="app.js"></script>
 </head> 
 <body>
