@@ -1,5 +1,4 @@
 <!doctype html>
-{%load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,15 +6,15 @@
           content= "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SPS CV2</title>
-    <link rel="icon" href ="img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0-_1_.ico" type="image/x-icon">
+    <link rel="icon" href ="{{url_for('static', filename='img/иконка-_1_.ico')}}" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-    <script src="app.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
 </head> 
 <body>
 
 <section class="icon">
     <div class="icon-iapran">
-        <img src="img/%D0%B8%D0%B0%D0%BF%20%D1%80%D0%B0%D0%BD.png">
+        <img src="{{url_for('static', filename='img/иап ран.png')}}">
         
     </div>
 </section>  
@@ -30,7 +29,7 @@
                 Обработка изображений секвенатора параллельного секвенирования “Нанофор СПС” с помощью модуля CV2
             </h2>
             <div class="link">
-                <a href="describe.html" class="next_list">
+                <a href="{{ url_for('describe') }}" class="next_list">
                     УЗНАТЬ БОЛЬШЕ
                 </a>
                 <a href="#openModal" class="upload-btn">
@@ -50,14 +49,14 @@
                 
  		</label>
             <a href="#close" class="close">
-            <img src="img/%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%BA.png">
+            <img src="{{url_for('static', filename='img/крестик.png')}}">
             </a>
         </div>
         <div class="preview">
-                <img id="file-ip-1-preview"> 
+                <img id="file-ip-1-preview" > <! -- TODO не отображается подгруженное изображение -->
         </div>
        
-              <a href="resalt.html" class="bth_resalt">
+              <a href="{{url_for('resalt') }}" class="bth_resalt">
             Продолжить
               </a>  
     </div>

@@ -80,3 +80,12 @@ for filename in os.listdir(image_dir):
 print(f"Number of pieces all images: {piece_whole_count}")
 print(f"Number of clasters all images: {cluster_whole_count}")
 
+'''
+TODO пример отправки запроса:
+app_url = "http://192.168.101.251:5000/test"
+post_data = {"steps": str(Y._current_pos), "time": str(int(end))}
+requests.post(f"{app_url}?steps={post_data['steps']}&time={post_data['time']}")
+
+TODO отправить изображение если конвертация будет
+'''
+
