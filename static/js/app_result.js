@@ -12,7 +12,7 @@ $(function() {
             processData: false,
             dataType: 'json'
         }).done(function(data, textStatus, jqXHR){
-             $("#value_clusters").html(data['clusters']);
+             $("#value_clusters").html(data['pieces']);
         }).fail(function(data){
             console.log('error!');
         });

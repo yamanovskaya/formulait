@@ -6,7 +6,7 @@
           content= "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Describe</title>
-    <link rel="icon" href ="img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0-_1_.ico" type="image/x-icon">
+    <link rel="icon" href ="{{ url_for('static', filename='img/иконка-_1_.ico') }}" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/describe.css')}}">
     <! -- TODO настроить редиректы и подгрузить картинки-иконки -->
 </head> 
@@ -15,10 +15,10 @@
     <selection class="icon_menu_top">
         <div class="icon-top">
             <div class="img_icon">
-                <img src="img/%D0%B8%D0%B0%D0%BF%20%D1%80%D0%B0%D0%BD%20%D1%81%D0%B8%D0%BD.png">
+                <img src="{{ url_for('static', filename='img/иап ран.png') }}">
             </div>
-            <a href="index.html" class="img_home">
-                <img src="img/%D0%B4%D0%BE%D0%BC.png">
+            <a href="{{ url_for('index') }}" class="img_home">
+                <img src="{{ url_for('static', filename='img/дом.png') }}">
             </a>
              
         </div>
@@ -72,7 +72,7 @@
                     Нанофор СПС представляет собой аппаратно-программный комплекс массового параллельного секвенирования ДНК. АПК расшифровки последовательности НК патогенных микроорганизмов методом МПС предназначен для быстрой расшифровки полных последовательностей геномов патогенных микроорганизмов (бактерий и вирусов) для их дальнейшей идентификации.
                 </p>
                 </h5>
-                <img src="img/%D0%9D%D0%B0%D0%BD%D0%BE%D1%84%D0%BE%D1%80%D0%A1%D0%9F%D0%A1.png">
+                <img src="{{ url_for('static', filename='img/НанофорСПС.png') }}">
               
                 </div>
                 <h4 class="content_title3">
@@ -84,14 +84,14 @@
                 </p>
               <div class="images">
                 <figure>
-                   <img src="img/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80.jpg" alt="Image"><figcaption>
+                   <img src="{{ url_for('static', filename='img/пример.jpg') }}" alt="Image"><figcaption>
                    Исходное изображение
                    </figcaption>
                </figure>
                   
                 <figure>
-                   <img src="img/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80.jpg" alt="Image"><figcaption>
-                   Обработанное изображение
+                   <img src="{{ url_for('static', filename='img/example.png') }}" alt="Image"><figcaption>
+                   Обработанное изображение (увеличенный фрагмент)
                    </figcaption>
                </figure>
              </div>
@@ -104,9 +104,9 @@
   <selection class="icon_menu_back">
                     <div class="icon-back">
                         <a href="#top" class= "arrow">
-                             <img src="img/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0.png">
+                             <img src="{{ url_for('static', filename='img/стрелка.png') }}">
                         </a>
-                        <a href="index.html" class= "btn-mainpage">
+                        <a href="{{ url_for('index') }}" class= "btn-mainpage">
                             На главную страницу
                         </a>
                     </div>

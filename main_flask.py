@@ -55,8 +55,6 @@ def describe():
 
 @app.route('/result', methods=['get', 'post'])
 def result():
-    # TODO v1 и v2 надо получить из счетчика кластеров файла main.final
-    # TODO на странице надо сделать отображение подгруженного изображения до и после обработки (скорее всего это будут готовые pngшки т.к. конвертацию из tiff никто не сделал)
     return render_template('resalt.html')
 
 @app.route('/get_image/<id>', methods=['get', 'post'])

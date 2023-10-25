@@ -6,8 +6,8 @@
           content= "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resalt</title>
-    <link rel="icon" href ="img/иконка-_1_.ico" type="image/x-icon">
-    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/resalt.css')}}">
+    <link rel="icon" href ="{{ url_for('static', filename='img/иконка-_1_.ico') }}" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/resalt.css') }}">
     <script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/app_result.js') }}"></script>
   <! -- TODO настроить редиректы и подгрузить картинки-иконки -->
@@ -18,8 +18,8 @@
             <div class="img_icon">
                 <img src="{{ url_for('static', filename='img/иап ран син.png') }}">
             </div>
-            <a href="index.html" class="img_home">
-                <img src="{ url_for('static', filename='img/дом.png') }}">
+            <a href="{{ url_for('index') }}" class="img_home">
+                <img src="{{ url_for('static', filename='img/дом.png') }}">
             </a>
              
         </div>
@@ -32,7 +32,7 @@
                   РЕЗУЛЬТАТ 
               </h1>
               <h2 class="intro__descripimg">
-                  Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                  Фрагмент обработанного изображения
               </h2>
 
               <div class="downloadedfile">
@@ -43,7 +43,7 @@
                </h3>
 
                <h4 class="intro__descriptable">
-                   Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+                   Эталонным считается результат, где погрешность подсчета единичных пятен не первышает 10%
                </h4>
                 
                <table>
@@ -67,11 +67,11 @@
                        </td>
 
                        <td>
-                           150
+                           150000
                        </td>
 
                        <td>
-                           -
+                           <10%
                        </td>
                    </tr>
                 </table>
@@ -86,7 +86,7 @@
                         <a href="#top" class= "arrow">
                              <img src="{{ url_for('static', filename='img/стрелка.png') }}">
                         </a>
-                        <a href="index.html" class= "btn-mainpage">
+                        <a href="{{ url_for('index') }}" class= "btn-mainpage">
                             На главную страницу
                         </a>
                     </div>
