@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2? Family= Itim & display=swap');
+
+
+*,*:before, *:after {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(../img/%D0%B4%D0%BD%D0%BA%20%D0%B3%D0%B8%D1%84.gif);
+    background-color: #082129;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: -65% 0%;
+    background-size: 85vw;
+    
+}
+
+.icon{
+    display: block;
+    background-repeat: no-repeat;
+    margin: 0;
+    max-height: 10hv;
+    width: 4.2vw;
+   
+}
+img{
+    height: 10vh; 
+    width: 4.2vw;
+    float: left;
+}
+
+/*intro start*/
+.intro{
+    height: 40vh;
+    width: 40vw;
+    margin-right: 10vw;
+    margin-left: 51vw;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    align-items: center;    
+}
+
+.intro__title{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 7.5vh;   
+}
+
+.intro__descrip{
+    text-align: center; color: white; font-size: 4.5vh; font-family: Raleway; font-weight: 400; word-wrap: break-word;
+}
+
+a{
+   text-decoration:none; 
+   text-align: center;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    justify-content: center;
+    
+    
+}
+
+.next_list{
+    margin-top: 6vh;
+    color: #082129;
+    font-size: 2.9vh; 
+    font-family: Raleway; 
+    font-weight: 400; 
+    padding-top:1.2vh;
+    background: white;
+    width: 15vw;
+    height: 6vh;
+    border-radius: 1.1vw;
+    border: 0.1vh white solid;
+    border-width: 0.2vh 0.1vw 0.2vh 0.1vw;
+  
+    transition: background .2s ease;
+}
+.next_list:hover{
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.upload-btn{
+    margin-top: 6vh;
+    color: white;
+    font-size: 2.9vh; 
+    font-family: Raleway; 
+    font-weight: 400;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    width: 20vw;
+    height: 6vh;
+    border-radius: 1.1vw;
+    border: 0.1vh white solid;
+    border-width: 0.2vh 0.1vw 0.2vh 0.1vw;
+    padding-top:1.2vh;
+    transition: background .2s ease;
+}
+.upload-btn:hover{
+     background: rgba(255, 255, 255, 0.5);
+}
+/*intro end*/
+
+/*openModal start*/ 
+.modal{   
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8); /* фон */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    padding: 0;
+    
+}
+/* При отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+    pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+
+.modal_content{
+    background-color:  #529CB5;
+    width: 76vw;
+    height: 92vh;
+    margin-top: 4vh;
+    margin-left: 11vw;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 10%;
+    
+    margin: 0;
+}
+.close img{
+    height: 5vh;
+    width: 2.5vw;
+}
+/*Стилистика кнопок*/
+.input-file-row {
+	display: inline-block;
+}
+.input-file {
+	position: relative;
+	display: inline-block;
+
+}
+.input-file span {
+    position: relative;
+    margin-left: 2vw;
+    margin-top: 2vh;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+    font-family: Raleway; 
+    font-weight: 400;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, 0);
+	line-height: 22px;
+	height: 35px;
+	padding: 5px 20px;
+	box-sizing: border-box;
+	border-radius: 1.1vw;
+    border: 0.2vh white solid;
+    border-width: 0.25vh 0.15vw 0.25vh 0.15vw;
+	
+	transition: background-color 0.2s;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+/* Focus */
+.input-file input[type=file]:focus + span {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover/active */
+.input-file:hover span {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.input-file:active span {
+	background-color: #082129;
+}
+ 
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+	background-color: #082129;
+}
+.preview{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    padding: .10rem;
+    
+      
+} 
+.preview img{
+    height: 60vh;
+    width: auto;
+}
+
+  
+.bth_resalt{
+
+    position: relative;
+    margin-top: 9vh;
+    margin-left: 65vw;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+    font-family: Raleway; 
+    font-weight: 400;
+	font-size: 14px;
+	vertical-align: middle;
+	color: #082129;
+	text-align: center;
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, 0);
+	line-height: 22px;
+	height: 35px;
+	padding: 5px 20px;
+	box-sizing: border-box;
+	border-radius: 1.1vw;
+    border: 0.5vh #082129 solid;
+    border-width: 0.25vh 0.15vw 0.25vh 0.15vw;
+	
+	transition: background-color 0.2s;
+    
+
+}
+.bth_resalt:hover{
+    background: rgba(0, 0, 0, 0.2);}

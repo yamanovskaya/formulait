@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2? Family= Itim & display=swap');
+
+
+*,*:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #082129;
+      
+}
+
+.icon-top {
+    display: flex; 
+    justify-content: space-between;
+    min-height: 10%;
+    align-items: center;
+    
+}
+.img_icon img{
+    width: 3.6vw;
+    height: 8.2vh;   
+}
+.img_home img{
+    width: 3.3vw;
+    height: 7vh;   
+}
+
+.container {
+
+    width: 66vw;
+    margin top: 20vh;
+    margin-left: 15vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 77vh;
+     flex-grow: 1; 
+   
+}
+
+.intro__content{
+    
+    flex-grow: 1; 
+}
+.intro__title {
+    text-align: center;
+    color: #529CB5;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 5vh; 
+    text-shadow: 0.5px 0 0.5px white, 
+0 0.5px 0.5px white, 
+-0.5px 0 0.5px white, 
+0 0.5px 0.5px white;
+    }
+    
+.intro__descripimg{
+    text-align: center;
+    color: white;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 3vh;    
+    }
+.downloadedfile{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    padding: .5rem;
+} 
+.place_img{
+    display: block;
+    height: 60vh;
+    width: auto;
+}
+   
+.intro__titletable{
+    margin: auto 0;
+    text-align: center;
+    color: #529CB5;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 5vh;
+    text-shadow: 0.5px 0 0.5px white, 
+0 0.5px 0.5px white, 
+-0.5px 0 0.5px white, 
+0 0.5px 0.5px white;
+    }  
+  
+.intro__descriptable{
+    text-align: center;
+    color: white;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 3vh;      
+}
+
+table {
+background-color:#529CB5;
+color: white;
+border-collapse: collapse;
+border: 1px solid white;
+width: 100%;
+text-align: center;
+
+}
+
+td, th {
+    padding: 12px; /* Поля вокруг текста */
+    border: 1px solid white;  /*Рамка вокруг ячеек */
+   }
+.icon-back  {
+margin-top: 15vh;
+display: flex;
+justify-content: space-between;
+min-height: 10%;
+align-items: flex-end;
+}
+.arrow img{
+    height: 7vh;
+    width: 2vw;
+}
+
+.btn-mainpage {
+    text-decoration:none; 
+    color: white;
+    font-size: 2.9vh; 
+    font-family: Raleway; 
+    font-weight: 400;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    width: 20vw;
+    height: 6vh;
+    border-radius: 1.1vw;
+    border: 0.1vh white solid;
+    border-width: 0.2vh 0.1vw 0.2vh 0.1vw;
+    padding-top:1.2vh;
+    transition: background .2s ease;
+}
+.btn-mainpage:hover{ 
+     background: rgba(255, 255, 255, 0.5);
+}

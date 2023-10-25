@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2? Family= Itim & display=swap');
+
+
+*,*:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #082129;
+     
+}
+
+.icon-top {
+    display: flex; 
+    justify-content: space-between;
+    min-height: 10%;
+    align-items: center;
+    
+}
+.img_icon img{
+    width: 3.6vw;
+    height: 8.2vh;   
+}
+.img_home img{
+    width: 3.3vw;
+    height: 7vh;   
+}
+.container {
+
+    width: 68vw;
+    margin top: 20vh;
+    margin-left: 14vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 77vh;
+    flex-grow: 1; 
+   
+}
+
+.intro__content{
+    
+    flex-grow: 1; 
+}
+.intro__title {
+    text-align: center;
+    color: #529CB5;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 5vh; 
+    text-shadow: 0.5px 0 0.5px white, 
+0 0.5px 0.5px white, 
+-0.5px 0 0.5px white, 
+0 0.5px 0.5px white;
+    }
+    
+.content_title1{
+    text-align: left;
+    color: #529CB5;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 4vh;
+}
+p{
+    text-align:justify;
+    color: white;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 3vh; 
+    line-height: 4vh;
+}
+u{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+ul{
+    text-align:justify;
+    color: white;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 2.5vh;
+    line-height: 3vh;
+}
+.content_title2{
+    text-align: left;
+    color: #529CB5;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 4vh;
+    margin-top: 10vh;
+}
+.nanofor{
+    display: flex;
+}
+h5{
+    margin: 0;
+}
+.nanofor img{
+    height: 40vh;
+    width: auto;
+}
+
+.content_title3{
+    text-align: left;
+    color: #529CB5;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 4vh;
+}
+
+.images{
+    display: flex;
+}
+figure img{
+    width: 30vw;
+    height: auto;
+    padding: 1vw;
+}
+figcaption{
+    color: white;
+    font-family: Itim; 
+    font-weight: 400; 
+    font-size: 2.5vh; 
+    margin-left: 8.5vw;
+}
+.icon-back  {
+margin-top: 15vh;
+display: flex;
+justify-content: space-between;
+min-height: 10%;
+align-items: flex-end;
+}
+.arrow img{
+    height: 7vh;
+    width: 2vw;
+}
+
+.btn-mainpage {
+    text-decoration:none; 
+    color: white;
+    font-size: 2.9vh; 
+    font-family: Raleway; 
+    font-weight: 400;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    width: 20vw;
+    height: 6vh;
+    border-radius: 1.1vw;
+    border: 0.1vh white solid;
+    border-width: 0.2vh 0.1vw 0.2vh 0.1vw;
+    padding-top:1.2vh;
+    transition: background .2s ease;
+}
+.btn-mainpage:hover{ 
+     background: rgba(255, 255, 255, 0.5);
+}

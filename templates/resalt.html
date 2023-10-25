@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content= "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resalt</title>
+    <link rel="icon" href ="img/иконка-_1_.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/resalt.css')}}">
+    <script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app_result.js') }}"></script>
+  <! -- TODO настроить редиректы и подгрузить картинки-иконки -->
+</head> 
+<body>
+    <selection class="icon_menu_top">
+        <div class="icon-top">
+            <div class="img_icon">
+                <img src="{{ url_for('static', filename='img/иап ран син.png') }}">
+            </div>
+            <a href="index.html" class="img_home">
+                <img src="{ url_for('static', filename='img/дом.png') }}">
+            </a>
+             
+        </div>
+    </selection> 
+    
+    <selection class="intro">
+        <div class="container">
+            <div class="intro__content">
+              <h1 class="intro__title">
+                  РЕЗУЛЬТАТ 
+              </h1>
+              <h2 class="intro__descripimg">
+                  Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+              </h2>
+
+              <div class="downloadedfile">
+                  <img id="image_clusters" class="place_img"/>
+              </div>
+               <h3 class="intro__titletable">
+                   ОПИСАНИЕ РЕЗУЛЬТАТА 
+               </h3>
+
+               <h4 class="intro__descriptable">
+                   Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+               </h4>
+                
+               <table>
+                   <tr>
+                       <td>
+                           ПОЛУЧЕННЫЙ РЕЗУЛЬТАТ
+                       </td>
+
+                       <td>
+                           ЭТАЛОННЫЙ РЕЗУЛЬТАТ
+                       </td>
+
+                       <td>
+                           ПОГРЕШНОСТЬ 
+                       </td>
+                   </tr>
+
+                   <tr>
+                       <td id="value_clusters">
+                           -
+                       </td>
+
+                       <td>
+                           150
+                       </td>
+
+                       <td>
+                           -
+                       </td>
+                   </tr>
+                </table>
+
+          </div>
+        </div> 
+    </selection> 
+    
+    
+  <selection class="icon_menu_back">
+                    <div class="icon-back">
+                        <a href="#top" class= "arrow">
+                             <img src="{{ url_for('static', filename='img/стрелка.png') }}">
+                        </a>
+                        <a href="index.html" class= "btn-mainpage">
+                            На главную страницу
+                        </a>
+                    </div>
+    </selection>
+                       
+                
+</body>   
+</html>       
+     
