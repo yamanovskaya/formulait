@@ -6,18 +6,20 @@
           content= "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resalt</title>
-    <link rel="icon" href ="img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0-_1_.ico" type="image/x-icon">
+    <link rel="icon" href ="img/иконка-_1_.ico" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/resalt.css')}}">
+    <script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app_result.js') }}"></script>
   <! -- TODO настроить редиректы и подгрузить картинки-иконки -->
 </head> 
 <body>
     <selection class="icon_menu_top">
         <div class="icon-top">
             <div class="img_icon">
-                <img src="img/%D0%B8%D0%B0%D0%BF%20%D1%80%D0%B0%D0%BD%20%D1%81%D0%B8%D0%BD.png">
+                <img src="{{ url_for('static', filename='img/иап ран син.png') }}">
             </div>
             <a href="index.html" class="img_home">
-                <img src="img/%D0%B4%D0%BE%D0%BC.png">
+                <img src="{ url_for('static', filename='img/дом.png') }}">
             </a>
              
         </div>
@@ -34,8 +36,7 @@
               </h2>
 
               <div class="downloadedfile">
-                  <div class="place_img"> 
-                  </div>
+                  <img id="image_clusters" class="place_img"/>
               </div>
                <h3 class="intro__titletable">
                    ОПИСАНИЕ РЕЗУЛЬТАТА 
@@ -61,16 +62,16 @@
                    </tr>
 
                    <tr>
-                       <td>
-                           Значение
+                       <td id="value_clusters">
+                           -
                        </td>
 
                        <td>
-                           Значение
+                           150
                        </td>
 
                        <td>
-                           Значение 
+                           -
                        </td>
                    </tr>
                 </table>
@@ -83,7 +84,7 @@
   <selection class="icon_menu_back">
                     <div class="icon-back">
                         <a href="#top" class= "arrow">
-                             <img src="img/%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BA%D0%B0.png">
+                             <img src="{{ url_for('static', filename='img/стрелка.png') }}">
                         </a>
                         <a href="index.html" class= "btn-mainpage">
                             На главную страницу

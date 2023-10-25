@@ -8,7 +8,8 @@
     <title>SPS CV2</title>
     <link rel="icon" href ="{{url_for('static', filename='img/иконка-_1_.ico')}}" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-    <script src="{{ url_for('static', filename='app.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </head> 
 <body>
 
@@ -44,9 +45,10 @@
     <div class="modal_content">
         <div class="header">  
             <label class="input-file">
-		   	<input type="file" id= "file-ip-1" multiple accept="image/*" onchange="showPreview(event)">		
+			<form id="uploadform" method="post" enctype="multipart/form-data">
+		   	<input type="file" name="file" id= "file-ip-1" accept="image/jpeg, image/png, image/tif, image/tiff, .tif" onchange="showPreview(event)">
 		   	<span>Выберите файл</span>
-                
+            </form>
  		</label>
             <a href="#close" class="close">
             <img src="{{url_for('static', filename='img/крестик.png')}}">
@@ -56,7 +58,7 @@
                 <img id="file-ip-1-preview" > <! -- TODO не отображается подгруженное изображение -->
         </div>
        
-              <a href="{{url_for('resalt') }}" class="bth_resalt">
+              <a id="btn_process" class="bth_resalt">
             Продолжить
               </a>  
     </div>
